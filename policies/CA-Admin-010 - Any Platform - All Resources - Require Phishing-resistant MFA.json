@@ -1,0 +1,79 @@
+{
+  "displayName": "CA-Admin-010 | Any Platform | All Resources | Require Phishing-resistant MFA",
+  "state": "enabled",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "REPLACE-WITH-BREAKGLASS-GROUP-ID"
+      ],
+      "includeRoles": [
+        "62e90394-69f5-4237-9190-012177145e10",
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "158c047a-c907-4556-b7ef-446551a6b5f7",
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+        "17315797-102d-40b4-93e0-432062caca18",
+        "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb",
+        "a9ea8996-122f-4c74-9520-8edcd192826c",
+        "ac434307-12b9-4fa1-a708-88bf58caabc1",
+        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+        "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+        "1707125e-0aa2-4d4d-8655-a7c786c76a25",
+        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+        "11451d60-acb2-45eb-a7d6-43d0f0125c13"
+      ],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000004",
+      "displayName": "Phishing-resistant MFA"
+    }
+  },
+  "sessionControls": null
+}

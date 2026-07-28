@@ -1,0 +1,76 @@
+﻿{
+    "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+    "displayName": "CA-Global-140 | Any Platform | All Resources | Block High Sign-in Risk",
+    "state@odata.type": "#microsoft.graph.conditionalAccessPolicyState",
+    "state": "enabled",
+    "partialEnablementStrategy": null,
+    "sessionControls": null,
+    "conditions": {
+        "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
+        "userRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+        "userRiskLevels": [],
+        "signInRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+        "signInRiskLevels": [
+            "high"
+        ],
+        "clientAppTypes@odata.type": "#Collection(microsoft.graph.conditionalAccessClientApp)",
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "agents": null,
+        "applications": {
+            "@odata.type": "#microsoft.graph.conditionalAccessApplications",
+            "includeApplications@odata.type": "#Collection(String)",
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications@odata.type": "#Collection(String)",
+            "excludeApplications": [],
+            "includeUserActions@odata.type": "#Collection(String)",
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences@odata.type": "#Collection(String)",
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "@odata.type": "#microsoft.graph.conditionalAccessUsers",
+            "includeUsers@odata.type": "#Collection(String)",
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers@odata.type": "#Collection(String)",
+            "excludeUsers": [],
+            "includeGroups@odata.type": "#Collection(String)",
+            "includeGroups": [],
+            "excludeGroups@odata.type": "#Collection(String)",
+            "excludeGroups": [
+                "00000000-0000-0000-0000-0000000b6a51"
+            ],
+            "includeRoles@odata.type": "#Collection(String)",
+            "includeRoles": [],
+            "excludeRoles@odata.type": "#Collection(String)",
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        }
+    },
+    "grantControls": {
+        "@odata.type": "#microsoft.graph.conditionalAccessGrantControls",
+        "operator": "OR",
+        "builtInControls@odata.type": "#Collection(microsoft.graph.conditionalAccessGrantControl)",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors@odata.type": "#Collection(String)",
+        "customAuthenticationFactors": [],
+        "termsOfUse@odata.type": "#Collection(String)",
+        "termsOfUse": [],
+        "authenticationStrength": null
+    }
+}

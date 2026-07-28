@@ -1,0 +1,21 @@
+﻿{
+    "TenantId": "00000000-0000-0000-0000-000000000000",
+    "Objects": [
+        {
+            "DisplayName": "CA-BreakGlass-Exclusions",
+            "Id": "00000000-0000-0000-0000-0000000b6a51",
+            "Type": "Group"
+        },
+        {
+            "DisplayName": "CA-DeviceCompliance-Exclusions",
+            "Id": "00000000-0000-0000-0000-0000000de71c",
+            "Type": "Group"
+        },
+        {
+            "DisplayName": "CA-ServiceAccounts",
+            "Id": "00000000-0000-0000-0000-00000005e4ac",
+            "Type": "Group"
+        }
+    ],
+    "Organization": "Baseline"
+}
